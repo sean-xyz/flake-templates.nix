@@ -1,0 +1,11 @@
+set quiet := false
+
+[group: "submodules"]
+mod flake
+
+@_list-recipes:
+	just --list
+
+[group: "formatting"]
+format:
+	prettier --write .
